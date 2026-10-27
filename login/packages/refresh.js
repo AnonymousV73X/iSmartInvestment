@@ -333,8 +333,12 @@ if (uploadedImageUrl) {
 // ... (previously defined code)
 // Function to update the profile image's src attribute
 function updateProfileImageSrc(imageUrl) {
-  const profileImage = document.querySelector("#profileImage");
-  profileImage.src = imageUrl;
+  const targetImages = document.querySelectorAll("#profileImage, .profile-image");
+  const validUrl = (imageUrl && imageUrl.trim() !== "") ? imageUrl : "../../img/avatar-1.png";
+  targetImages.forEach(img => {
+    img.src = validUrl;
+    img.onerror = () => { img.src = "../../img/avatar-1.png"; };
+  });
 }
 
 // ... (other previously defined functions and code)
@@ -355,7 +359,7 @@ if (storedUserUid) {
 
         } else {
           
-          console.log("No image URL found in the database.");
+          updateProfileImageSrc("../../img/avatar-1.png");
         }
       } else {
         console.error("User data not found.");
