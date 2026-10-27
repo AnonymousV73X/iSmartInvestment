@@ -121,6 +121,7 @@ const firebaseConfig = {
 
 ## 6. What I Plan to Tackle in Week 02
 
-- Connect my dedicated Firebase database instance to test live user signups and logins.
-- Bind real-time database listeners to populate dashboard metrics dynamically with live user balances.
-- Finalize the transaction submission and withdrawal request workflows.
+- **Package Activation Engine:** Implement interactive investment confirmation modals on package cards with automated balance verification and deduction.
+- **Deposit & Top-up Flow via M-Pesa:** Add an intuitive "Fund Account" interface allowing investors to submit deposit requests directly to their transaction feed.
+- **Dynamic Yield & Maturity Calculations:** Transition profit accrual logic from static calendar offsets to individualized investment start timestamps.
+- **End-to-End Database Validation:** Perform live testing of the complete investor journey (registration, package purchase, and withdrawal requests) on the connected Firebase database (`i-smart-600b9`).

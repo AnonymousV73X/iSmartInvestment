@@ -200,7 +200,7 @@ async function handleDepositClick() {
 
     // Calculate the number of weeks between oldDate and the current date
     const currentDate = new Date();
-    const oldDate = new Date("August 8, 2023 10:00:00");
+    const oldDate = new Date();
     const timeDifference = currentDate - oldDate;
     const weeksDifference = Math.floor(timeDifference / (1000 * 3600 * 24 * 7));
 
