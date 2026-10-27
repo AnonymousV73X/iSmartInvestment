@@ -1,104 +1,115 @@
-# Week 01 Progress Report: Frontend Experience & Portal Preview
+# Week 01 Project Milestone Report: Platform Frontend & Investor Portal
 
-**Project:** iSmart Investment Platform  
-**Sprint / Milestone:** Week 01 – Frontend Foundation, Landing Page & Investor Portal UI  
-**Current Release Year:** 2026  
-**Status:** Completed & Delivered for Client Review  
-**Engineering:** Frontend Development Team  
-
----
-
-## 1. Executive Summary
-
-During **Week 01**, we completed the frontend foundation for the **iSmart Investment** platform. The scope of this milestone covers the public marketing front, the brand identity, and the three primary authenticated investor interfaces:
-
-1. **Public Landing Page & Showcase** (Hero, value propositions, packages overview, and social proof)
-2. **Investor Dashboard** (`login/dashboard/`)
-3. **User Profile Interface** (`login/profile/`)
-4. **Investment Packages Interface** (`login/packages/`)
-
-All UI elements, responsive breakpoints, stylesheets, and vendor libraries are bundled into this self-contained **`Week 01 progress`** package.
+**Project Name:** iSmart Investment Platform  
+**Milestone:** Sprint 01 — Public Platform, Brand Experience & Investor Portal Interfaces  
+**Release Year:** 2026  
+**Document Owner:** Project Management / Product Owner  
+**Stakeholder Audience:** Executive Leadership, Business Partners & Investors  
 
 ---
 
-## 2. Deliverables & Features Covered
+## 1. Milestone Overview & Objectives
 
-### A. Public Landing Page Experience
-- **Hero & Value Proposition:** Modern typography, dynamic CTAs (*Login* and *Register*), and high-resolution 3D financial illustrations.
-- **Service Highlights:** Interactive cards detailing weekly yields (+35%), investment security, and fast capital turnaround.
-- **Testimonial Slider:** Automated testimonials powered by `Owl Carousel 2` and scroll-triggered animations via `AOS`.
-- **Branding & Footer:** Unified 2026 copyright and contact routing.
+This report outlines the completion of **Milestone 01 (Week 01)** for the **iSmart Investment** web platform. Our primary focus during this initial development cycle was establishing the core brand presentation, delivering an engaging customer conversion funnel, and finalizing the investor portal frontend user interfaces (Dashboard, Profile, and Investment Packages).
 
-### B. Investor Dashboard (`login/dashboard/`)
-- Real-time balance and earnings cards: **Account Balance**, **Active Investments**, **Total Profit**, and **Referral Bonus**.
-- Quick action navigation tabs for rapid switching between **Packages**, **Profile**, **Transactions**, and **Withdrawals**.
-- Responsive side navigation bar and top profile status dropdown.
-
-### C. Investor Profile Management (`login/profile/`)
-- User credential and account summary view (Username, Email, Phone, Account UID, and Joined Date).
-- Profile details card formatted for identity verification and account updates.
-
-### D. Investment Packages Portal (`login/packages/`)
-- Tiered investment card grid with deposit thresholds, percentage return rates, maturity duration, and active plan indicators.
-- One-click package selection modals ready for funding and confirmation triggers.
+All deliverables under this milestone have been built, styled, and packaged into a self-contained demonstration release ready for stakeholder review and testing.
 
 ---
 
-## 3. Directory Layout (Week 01 Deliverable)
+## 2. What We Accomplished in Week 01
+
+### A. Public Presence & Investor Conversion Landing Page
+We designed and launched the public landing page to present the iSmart Investment value proposition clearly across all desktop, tablet, and mobile devices:
+
+- **Hero & Value Proposition:** Introduced high-converting messaging (*"Invest Today, Prosper Tomorrow"*) supported by modern 3D financial growth illustrations.
+- **Immediate Call-to-Actions (CTAs):** Direct routing for new user onboarding (*"Get Started / Register"*) and returning investor access (*"Login"*).
+- **Core Value Highlights:** High-impact service cards detailing key financial benefits:
+  - **+35% Weekly Profit Target:** Clear, bold projection metrics to drive user confidence.
+  - **Capital Security & Diligent Growth:** Structured trust-building messaging.
+  - **Fast Liquidity & Withdrawals:** Visual turnaround timelines.
+- **Interactive Social Proof:** Dynamic investor testimonial slider powered by `Owl Carousel 2` and scroll-activated animations (`AOS`) to increase visitor conversion rates.
+- **Brand Compliance:** 2026 footer, navigation links, and cross-browser responsive layouts.
+
+### B. Member Authentication Experience
+- **Login Portal (`login/index.html`):** Clean member sign-in interface with input validation and instant error feedback.
+- **Registration Flow (`register/index.html`):** Real-time client-side email pattern and credential validation before account submission.
+
+### C. Investor Dashboard (`login/dashboard/`)
+The central hub for active investors, built with an intuitive layout:
+- **Financial Metric Cards:** Live visual blocks tracking **Account Balance**, **Active Investments**, **Total Profit**, and **Referral Bonuses**.
+- **Quick-Access Navigation:** Streamlined tabs allowing immediate switching to Investment Packages, Profile Management, Transaction History, and Withdrawal Requests.
+- **Responsive Navigation Sidebar:** Optimized drawer for seamless mobile and desktop management.
+
+### D. Investment Packages Showcase (`login/packages/`)
+- **Tiered Investment Plans:** Clear comparison cards detailing minimum/maximum deposit amounts, percentage yields, duration periods, and active subscription indicators.
+- **Action Triggers:** Direct investment confirmation modals tailored for fast user decision-making.
+
+### E. User Profile Management (`login/profile/`)
+- **Investor Identity Card:** Summarizes member username, verified email, phone contact, unique account UID, and registration date.
+- **Account Settings Layout:** Structured interface designed for profile updates and account security controls.
+
+---
+
+## 3. Directory Structure for Week 01 Deliverables
+
+The files for this milestone are organized inside the `Week 01 progress/` folder:
 
 ```text
 Week 01 progress/
-├── index.html                  # Public marketing & landing page (2026 edition)
-├── README.md                   # This report & handover guide
-├── css/                        # Core styling & custom responsive overrides
-├── js/                         # Landing page script logic & animations
-├── img/                        # 3D assets, icons, backgrounds & avatars
-├── vendor/                     # Bootstrap, jQuery, OwlCarousel libraries
+├── index.html                  # Public investor landing page (2026)
+├── README.md                   # This milestone completion report
+├── css/                        # Theme styles, custom rules & layout styling
+├── js/                         # Landing page interaction & animation scripts
+├── img/                        # 3D visuals, testimonial avatars & brand assets
+├── vendor/                     # UI dependencies (Bootstrap 4.x, jQuery, OwlCarousel)
+├── register/                   # Member registration interface & validation
 └── login/
     ├── index.html              # Member login interface
-    ├── login.css & js          # Authentication UI styles & handlers
-    ├── dashboard/              # Investor Dashboard view & controller
-    ├── profile/                # Profile management view & controller
-    ├── packages/               # Investment tiers & package selection view
-    ├── transactions/           # Transaction history UI preview
-    └── withdraw/               # Withdrawal request UI preview
+    ├── login.css & js          # Authentication UI handlers
+    ├── dashboard/              # Investor Dashboard interface
+    ├── profile/                # Investor Profile management interface
+    ├── packages/               # Investment Tier & Packages catalog
+    ├── transactions/           # Transaction history preview
+    └── withdraw/               # Capital withdrawal request preview
 ```
 
 ---
 
-## 4. Firebase Configuration & Client Handover Instructions
+## 4. How to Preview the Deliverables
 
-The application uses **Firebase Authentication** for user accounts and **Firebase Realtime Database (RTDB)** for user balances, packages, and transaction logs.
-
-### Where Firebase Config is Located in the Code
-The configuration object (`firebaseConfig`) is currently set across these scripts:
-- `login/firebase-login.js` (Lines 16–24)
-- `login/dashboard/refresh.js` (Lines 16–24)
-- `login/profile/refresh.js` (Lines 13–21)
-- `login/packages/refresh.js` (Lines 12–20)
-- `login/transactions/refresh.js` (Lines 14–22)
-- `login/withdraw/refresh.js` (Lines 15–23)
-- `register/firebase-register.js` (Lines 151–159)
-
-### Information the Client Needs to Provide
-To connect their own independent Firebase project, ask the client for:
-
-```javascript
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-```
+1. Open `index.html` in the `Week 01 progress/` directory with any modern browser.
+2. Navigate through the landing page sections and test the navigation links.
+3. Access the member interfaces directly:
+   - **Registration:** `./register/index.html`
+   - **Login:** `./login/index.html`
+   - **Dashboard:** `./login/dashboard/index.html`
+   - **Packages:** `./login/packages/index.html`
+   - **Profile:** `./login/profile/index.html`
+4. Test mobile and tablet responsive layouts using browser developer tools (`F12` or `Ctrl + Shift + I`).
 
 ---
 
-## 5. Next Steps for Week 02
+## 5. Technical Environment & Backend Preparation
 
-- [ ] Plug in the client's production Firebase credentials and test live user registration.
-- [ ] Connect Realtime Database balance updates directly to the Dashboard and Package activation buttons.
-- [ ] Implement live withdrawal request status tracking and admin approval workflows.
+The platform frontend is architected to communicate directly with **Firebase Authentication** and **Firebase Realtime Database (RTDB)**.
+
+### Client-Managed Firebase Setup
+To maintain complete data sovereignty and direct control over investor credentials, financial records, and security rules, the client project configuration is maintained in:
+
+- `login/firebase-login.js`
+- `register/firebase-register.js`
+- `login/dashboard/refresh.js`
+- `login/packages/refresh.js`
+- `login/profile/refresh.js`
+- `login/transactions/refresh.js`
+- `login/withdraw/refresh.js`
+
+*When ready, the client's dedicated Firebase credentials (`apiKey`, `authDomain`, `databaseURL`, `projectId`, `storageBucket`) will be slotted into these modules.*
+
+---
+
+## 6. Roadmap for Week 02 (Next Milestone)
+
+- **Backend Integration:** Link the client's dedicated Firebase instance for live user registration and login session persistence.
+- **Dynamic Data Binding:** Connect real-time database feeds to replace static mock metrics on the dashboard with live investor balances.
+- **Deposit & Withdrawal Processing:** Finalize transaction request submission workflows and administrative status tracking.
