@@ -10,13 +10,14 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCjo5Q7udPIXCVUFJYG4Dp1hcpLvAElg6o",
-  authDomain: "money-92adb.firebaseapp.com",
-  databaseURL: "https://money-92adb-default-rtdb.firebaseio.com",
-  projectId: "money-92adb",
-  storageBucket: "money-92adb.appspot.com",
-  messagingSenderId: "1042572717494",
-  appId: "1:1042572717494:web:f056df88597e53c3a0e517",
+  apiKey: "AIzaSyB6QD_Ufu8IiU8qrrzAUm3pjSXHQrNVqNs",
+  authDomain: "i-smart-600b9.firebaseapp.com",
+  databaseURL: "https://i-smart-600b9-default-rtdb.firebaseio.com",
+  projectId: "i-smart-600b9",
+  storageBucket: "i-smart-600b9.firebasestorage.app",
+  messagingSenderId: "436483974438",
+  appId: "1:436483974438:web:4d6f4eecd8437e86874de7",
+  measurementId: "G-EP35BSMWXQ"
 };
 
 // Initialize Firebase
