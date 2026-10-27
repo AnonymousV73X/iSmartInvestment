@@ -3,7 +3,7 @@
 **Project Name:** iSmart Investment Platform  
 **Milestone:** Week 01 – Frontend Foundation, Brand Landing Page & Investor Portal  
 **Year:** 2026  
-**Author / Builder:** Project Founder & Lead Developer  
+**Author / Builder:** MORIS KARANI  
 **Status:** Completed & Ready for Review  
 
 ---
